@@ -52,6 +52,13 @@ img, svg { display: block; max-width: 100%; }
 .spritz-nav-phone { display: flex; align-items: center; gap: 8px; font-size: var(--fs-sm); font-weight: var(--fw-bold); color: #fff; }
 .spritz-nav-phone svg { color: var(--spritz-gold); }
 
+/* ─── Language toggle ─── */
+.spritz-lang-toggle { display: flex; align-items: center; gap: 2px; background: rgba(255,255,255,0.07); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 3px; }
+.spritz-lang-toggle button { font-size: var(--fs-3xs); font-weight: var(--fw-heavy); letter-spacing: 0.08em; color: var(--text-sub); padding: 4px 9px; border-radius: 4px; transition: all var(--t-fast) var(--ease); }
+.spritz-lang-toggle button.active { background: var(--spritz-gold); color: var(--black); }
+.spritz-lang-toggle button:not(.active):hover { color: #fff; }
+.spritz-lang-divider { width: 1px; height: 12px; background: var(--line); }
+
 /* ─── Buttons ─── */
 .spritz-btn-primary {
   background: var(--spritz-gold); color: var(--black);

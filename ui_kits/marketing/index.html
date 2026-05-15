@@ -16,6 +16,7 @@
 
 <script type="text/babel" src="Icons.jsx"></script>
 <script type="text/babel" src="Logo.jsx"></script>
+<script type="text/babel" src="i18n.jsx"></script>
 <script type="text/babel" src="Nav.jsx"></script>
 <script type="text/babel" src="Hero.jsx"></script>
 <script type="text/babel" src="Sections.jsx"></script>
@@ -24,6 +25,7 @@
 
 <script type="text/babel">
   const { useEffect } = React;
+  const { LangProvider } = window.SpritzI18n;
   const { AnnouncementBar, Nav } = window.SpritzNav;
   const { Hero } = window.SpritzHero;
   const { LogoStrip, WhyItMatters, Differentiators, Process, Industries, FAQ } = window.SpritzSections;
@@ -32,7 +34,6 @@
 
   function App() {
     useEffect(() => {
-      // Scroll reveal — adds .visible to .spritz-reveal / .spritz-stagger when in view.
       const io = new IntersectionObserver(
         (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
         { threshold: 0.15 }
@@ -58,7 +59,9 @@
     );
   }
 
-  ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  ReactDOM.createRoot(document.getElementById("root")).render(
+    <LangProvider><App /></LangProvider>
+  );
 </script>
 </body>
 </html>
