@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Type — Labels</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 28px; gap: 16px; align-items: flex-start; justify-content: flex-start; }
+  .row { display: flex; align-items: center; gap: 20px; padding: 6px 0; }
+  .kicker { display: inline-flex; align-items: center; gap: 10px; font-size: 11px; font-weight: 700; letter-spacing: 0.20em; color: var(--spritz-gold); text-transform: uppercase; }
+  .kicker::before { content: ''; width: 24px; height: 1px; background: var(--spritz-gold); }
+  .label { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; color: rgba(255,255,255,0.50); text-transform: uppercase; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(255,185,0,0.08); border: 1px solid rgba(255,185,0,0.25); border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: var(--spritz-gold); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--spritz-gold); }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: rgba(255,255,255,0.4); margin-left: auto; }
+</style></head>
+<body>
+<div style="display:flex;flex-direction:column;gap:14px;width:100%">
+  <div class="row"><span class="kicker">The Business Case</span><span class="meta">700 · 11 · .20em</span></div>
+  <div class="row"><span class="label">RECURRING INVESTMENT</span><span class="meta">700 · 10 · .16em</span></div>
+  <div class="row"><span class="eyebrow"><span class="dot"></span>Now Serving Montréal</span><span class="meta">Pill · pulse dot</span></div>
+</div>
+</body></html>

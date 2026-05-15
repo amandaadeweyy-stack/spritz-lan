@@ -1,0 +1,29 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Shadows</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 32px; background: #0B0B0B; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .card { background: linear-gradient(180deg,#1A1A1A 0%,#222 100%); border: 1px solid var(--line); border-radius: 14px; padding: 20px; min-height: 110px; display: flex; flex-direction: column; justify-content: space-between; }
+  .name { font-size: 12px; font-weight: 800; letter-spacing: 0.04em; }
+  .meta { font-family: var(--font-mono); font-size: 9px; color: rgba(255,255,255,0.5); line-height: 1.5; }
+  .one { box-shadow: 0 16px 40px rgba(0,0,0,0.40); }
+  .two { box-shadow: 0 30px 80px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,185,0,0.06); }
+  .three { box-shadow: 0 12px 32px rgba(255,185,0,0.28); }
+</style></head>
+<body>
+<div class="grid">
+  <div class="card one">
+    <div class="name">Float</div>
+    <div class="meta">0 16 40 / .40 black<br>floating notif chip</div>
+  </div>
+  <div class="card two">
+    <div class="name">Card · Hero</div>
+    <div class="meta">0 30 80 -20 / .7<br>+ 0 0 0 1 / gold .06</div>
+  </div>
+  <div class="card three">
+    <div class="name">Btn glow</div>
+    <div class="meta">0 12 32 / gold .28<br>primary hover</div>
+  </div>
+</div>
+</body></html>

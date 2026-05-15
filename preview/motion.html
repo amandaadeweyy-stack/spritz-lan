@@ -1,0 +1,38 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Motion</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px; gap: 8px; align-items: flex-start; justify-content: flex-start; }
+  .row { display: grid; grid-template-columns: 130px 1fr 90px; gap: 14px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .name { font-size: 11px; font-weight: 800; }
+  .curve { width: 60px; height: 32px; }
+  .curve path { fill: none; stroke: var(--spritz-gold); stroke-width: 2; }
+  .grid { display: flex; align-items: center; gap: 12px; }
+  .meta { font-family: var(--font-mono); font-size: 10px; color: rgba(255,255,255,0.5); }
+  .dur { font-family: var(--font-mono); font-size: 11px; color: var(--spritz-gold); font-weight: 700; text-align: right; }
+</style></head>
+<body>
+<div style="display:flex;flex-direction:column;gap:0;width:100%">
+  <div class="row">
+    <div class="grid"><svg class="curve" viewBox="0 0 60 32"><path d="M0,32 C24,32 36,0 60,0"/></svg><div class="name">ease</div></div>
+    <div class="meta">cubic-bezier(0.4, 0, 0.2, 1) · hover, color transitions</div>
+    <div class="dur">200–250ms</div>
+  </div>
+  <div class="row">
+    <div class="grid"><svg class="curve" viewBox="0 0 60 32"><path d="M0,32 C10,0 18,0 60,0"/></svg><div class="name">ease-out</div></div>
+    <div class="meta">cubic-bezier(0.16, 1, 0.3, 1) · scroll reveals, entries</div>
+    <div class="dur">600–700ms</div>
+  </div>
+  <div class="row">
+    <div class="grid"><div class="name">stagger</div></div>
+    <div class="meta">80ms per child · max ~6 children</div>
+    <div class="dur">+80ms</div>
+  </div>
+  <div class="row">
+    <div class="grid"><div class="name">float</div></div>
+    <div class="meta">y −8px sine, 4s, infinite · notification chips only</div>
+    <div class="dur">4s ∞</div>
+  </div>
+</div>
+</body></html>

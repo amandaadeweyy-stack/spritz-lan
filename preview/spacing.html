@@ -1,0 +1,24 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Spacing</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 24px; gap: 8px; align-items: flex-start; justify-content: flex-start; }
+  .row { display: flex; align-items: center; gap: 14px; }
+  .bar { background: var(--spritz-gold); height: 12px; border-radius: 2px; }
+  .num { font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,0.6); width: 36px; text-align: right; }
+  .name { font-size: 11px; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 0.04em; }
+</style></head>
+<body>
+<div style="display:flex;flex-direction:column;gap:6px;width:100%">
+  <div class="row"><span class="num">4</span><span class="bar" style="width:4px"></span><span class="name">hair / inset</span></div>
+  <div class="row"><span class="num">8</span><span class="bar" style="width:8px"></span><span class="name">tight gap</span></div>
+  <div class="row"><span class="num">14</span><span class="bar" style="width:14px"></span><span class="name">card padding inset</span></div>
+  <div class="row"><span class="num">20</span><span class="bar" style="width:20px"></span><span class="name">section heading gap</span></div>
+  <div class="row"><span class="num">28</span><span class="bar" style="width:28px"></span><span class="name">card interior</span></div>
+  <div class="row"><span class="num">32</span><span class="bar" style="width:32px"></span><span class="name">container gutter</span></div>
+  <div class="row"><span class="num">48</span><span class="bar" style="width:48px"></span><span class="name">grid gap (logo strip)</span></div>
+  <div class="row"><span class="num">64</span><span class="bar" style="width:64px"></span><span class="name">section-head bottom</span></div>
+  <div class="row"><span class="num">80</span><span class="bar" style="width:80px"></span><span class="name">column gap (hero)</span></div>
+  <div class="row"><span class="num">120</span><span class="bar" style="width:120px"></span><span class="name">section vertical pad</span></div>
+</div>
+</body></html>

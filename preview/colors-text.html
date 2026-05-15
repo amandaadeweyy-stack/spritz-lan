@@ -1,0 +1,18 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Text Colors</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 28px; gap: 14px; }
+  .row { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; border-radius: 10px; background: #1A1A1A; border: 1px solid var(--line); }
+  .label { font-size: 11px; font-weight: 800; letter-spacing: 0.04em; }
+  .meta { font-family: var(--font-mono); font-size: 11px; opacity: 0.5; }
+  .sample { font-weight: 700; font-size: 15px; }
+</style></head>
+<body>
+<div style="display:flex;flex-direction:column;gap:8px">
+  <div class="row"><span class="sample" style="color:#FFFFFF">Primary text · 100%</span><span class="meta">#FFFFFF</span></div>
+  <div class="row"><span class="sample" style="color:rgba(255,255,255,0.72)">Body / paragraph · 72%</span><span class="meta">white / .72</span></div>
+  <div class="row"><span class="sample" style="color:rgba(255,255,255,0.50)">Muted · labels · 50%</span><span class="meta">white / .50</span></div>
+  <div class="row"><span class="sample" style="color:rgba(255,255,255,0.32)">Faint · tertiary · 32%</span><span class="meta">white / .32</span></div>
+</div>
+</body></html>

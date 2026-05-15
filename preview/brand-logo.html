@@ -1,0 +1,64 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Brand Logo</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 28px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 16px; align-items: stretch; }
+  .tile { display: flex; flex-direction: column; gap: 8px; align-items: center; justify-content: center; padding: 18px; border-radius: 14px; border: 1px solid rgba(255,255,255,0.08); }
+  .tile.dark { background: #0B0B0B; }
+  .tile.charcoal { background: #1A1A1A; }
+  .tile.gold { background: var(--spritz-gold); color: #0B0B0B; }
+  .tile svg { display: block; }
+  .meta { font-family: var(--font-mono); font-size: 9px; color: rgba(255,255,255,0.5); text-align: center; font-weight: 600; }
+  .tile.gold .meta { color: rgba(11,11,11,0.6); }
+  .brand-stack { display: flex; align-items: center; gap: 12px; }
+  .stack-text { display: flex; flex-direction: column; }
+  .stack-text .top { font-size: 18px; font-weight: 900; letter-spacing: 0.04em; line-height: 1; color: #fff; }
+  .stack-text .sub { font-size: 9px; font-weight: 700; letter-spacing: 0.2em; color: var(--spritz-gold); margin-top: 3px; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="tile dark">
+    <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
+      <rect x="2" y="22" width="14" height="3" rx="1.5" fill="#FFB900"/>
+      <rect x="0" y="28" width="20" height="3" rx="1.5" fill="#FFB900"/>
+      <rect x="4" y="34" width="10" height="3" rx="1.5" fill="#FFB900"/>
+      <path d="M14 44 L15.5 47 L18.5 48.5 L15.5 50 L14 53 L12.5 50 L9.5 48.5 L12.5 47 Z" fill="#FFB900"/>
+      <path d="M52 18 Q56 14 50 12 Q42 11 36 16 Q28 22 32 30 Q34 34 40 36 Q46 38 44 42 Q42 46 36 46 Q30 46 26 42" stroke="#FFB900" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M48 14 Q52 10 46 8 Q38 7 32 12 Q24 18 28 26 Q30 30 36 32 Q42 34 40 38 Q38 42 32 42 Q26 42 22 38" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M52 8 L53.5 11 L56.5 12.5 L53.5 14 L52 17 L50.5 14 L47.5 12.5 L50.5 11 Z" fill="#FFB900"/>
+    </svg>
+    <div class="meta">PRIMARY · on black</div>
+  </div>
+  <div class="tile gold">
+    <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
+      <rect x="2" y="22" width="14" height="3" rx="1.5" fill="#0B0B0B"/>
+      <rect x="0" y="28" width="20" height="3" rx="1.5" fill="#0B0B0B"/>
+      <rect x="4" y="34" width="10" height="3" rx="1.5" fill="#0B0B0B"/>
+      <path d="M14 44 L15.5 47 L18.5 48.5 L15.5 50 L14 53 L12.5 50 L9.5 48.5 L12.5 47 Z" fill="#0B0B0B"/>
+      <path d="M52 18 Q56 14 50 12 Q42 11 36 16 Q28 22 32 30 Q34 34 40 36 Q46 38 44 42 Q42 46 36 46 Q30 46 26 42" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M48 14 Q52 10 46 8 Q38 7 32 12 Q24 18 28 26 Q30 30 36 32 Q42 34 40 38 Q38 42 32 42 Q26 42 22 38" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"/>
+      <path d="M52 8 L53.5 11 L56.5 12.5 L53.5 14 L52 17 L50.5 14 L47.5 12.5 L50.5 11 Z" fill="#0B0B0B"/>
+    </svg>
+    <div class="meta">MONO · on gold</div>
+  </div>
+  <div class="tile charcoal">
+    <div class="brand-stack">
+      <svg width="40" height="40" viewBox="0 0 64 64" fill="none">
+        <rect x="2" y="22" width="14" height="3" rx="1.5" fill="#FFB900"/>
+        <rect x="0" y="28" width="20" height="3" rx="1.5" fill="#FFB900"/>
+        <rect x="4" y="34" width="10" height="3" rx="1.5" fill="#FFB900"/>
+        <path d="M14 44 L15.5 47 L18.5 48.5 L15.5 50 L14 53 L12.5 50 L9.5 48.5 L12.5 47 Z" fill="#FFB900"/>
+        <path d="M52 18 Q56 14 50 12 Q42 11 36 16 Q28 22 32 30 Q34 34 40 36 Q46 38 44 42 Q42 46 36 46 Q30 46 26 42" stroke="#FFB900" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M48 14 Q52 10 46 8 Q38 7 32 12 Q24 18 28 26 Q30 30 36 32 Q42 34 40 38 Q38 42 32 42 Q26 42 22 38" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" fill="none"/>
+        <path d="M52 8 L53.5 11 L56.5 12.5 L53.5 14 L52 17 L50.5 14 L47.5 12.5 L50.5 11 Z" fill="#FFB900"/>
+      </svg>
+      <div class="stack-text">
+        <span class="top">SPRITZ</span>
+        <span class="sub">COMMERCIAL CLEANING</span>
+      </div>
+    </div>
+    <div class="meta" style="margin-top:8px">LOCKUP · nav variant</div>
+  </div>
+</div>
+</body></html>

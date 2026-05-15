@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Cards</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 22px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .card { background: #222; border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; gap: 10px; }
+  .card.elev { background: linear-gradient(180deg,#1A1A1A 0%,#222 100%); box-shadow: 0 30px 80px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,185,0,0.06); }
+  .icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,185,0,0.08); border: 1px solid rgba(255,185,0,0.18); color: var(--spritz-gold); display: flex; align-items: center; justify-content: center; }
+  .icon svg { width: 18px; height: 18px; }
+  h3 { font-size: 16px; font-weight: 800; }
+  p { font-size: 12px; color: rgba(255,255,255,0.72); line-height: 1.55; }
+  .meta { font-family: var(--font-mono); font-size: 9px; color: rgba(255,255,255,0.4); margin-top: auto; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="card">
+    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+    <h3>Custom Cleaning Plans</h3>
+    <p>Tailored to your operating hours and the specific surfaces in your space.</p>
+    <div class="meta">card · r14 · slate · line .08</div>
+  </div>
+  <div class="card elev">
+    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+    <h3>Cleanliness compounds.</h3>
+    <p>Recurring maintenance prevents wear before it starts.</p>
+    <div class="meta">elevated · gradient · gold border tint</div>
+  </div>
+</div>
+</body></html>

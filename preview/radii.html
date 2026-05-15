@@ -1,0 +1,20 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Radii</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  body { padding: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+  .box { aspect-ratio: 1; background: linear-gradient(180deg,#1A1A1A 0%,#222 100%); border: 1px solid var(--line); display: flex; align-items: flex-end; justify-content: center; padding: 8px; }
+  .lbl { font-size: 10px; font-weight: 700; font-family: var(--font-mono); color: rgba(255,255,255,0.6); text-align: center; }
+  .lbl b { color: var(--spritz-gold); font-weight: 700; display: block; }
+</style></head>
+<body>
+<div class="grid">
+  <div class="box" style="border-radius:6px"><div class="lbl"><b>6</b>button</div></div>
+  <div class="box" style="border-radius:8px"><div class="lbl"><b>8</b>input</div></div>
+  <div class="box" style="border-radius:10px"><div class="lbl"><b>10</b>chip</div></div>
+  <div class="box" style="border-radius:12px"><div class="lbl"><b>12</b>FAQ</div></div>
+  <div class="box" style="border-radius:14px"><div class="lbl"><b>14</b>card</div></div>
+  <div class="box" style="border-radius:18px"><div class="lbl"><b>18</b>hero</div></div>
+</div>
+</body></html>

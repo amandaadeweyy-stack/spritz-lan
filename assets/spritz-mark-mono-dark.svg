@@ -1,0 +1,9 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Spritz mark — mono dark">
+  <rect x="2" y="22" width="14" height="3" rx="1.5" fill="#0B0B0B"></rect>
+  <rect x="0" y="28" width="20" height="3" rx="1.5" fill="#0B0B0B"></rect>
+  <rect x="4" y="34" width="10" height="3" rx="1.5" fill="#0B0B0B"></rect>
+  <path d="M14 44 L15.5 47 L18.5 48.5 L15.5 50 L14 53 L12.5 50 L9.5 48.5 L12.5 47 Z" fill="#0B0B0B"></path>
+  <path d="M52 18 Q56 14 50 12 Q42 11 36 16 Q28 22 32 30 Q34 34 40 36 Q46 38 44 42 Q42 46 36 46 Q30 46 26 42" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" fill="none"></path>
+  <path d="M48 14 Q52 10 46 8 Q38 7 32 12 Q24 18 28 26 Q30 30 36 32 Q42 34 40 38 Q38 42 32 42 Q26 42 22 38" stroke="#0B0B0B" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.5"></path>
+  <path d="M52 8 L53.5 11 L56.5 12.5 L53.5 14 L52 17 L50.5 14 L47.5 12.5 L50.5 11 Z" fill="#0B0B0B"></path>
+</svg>
